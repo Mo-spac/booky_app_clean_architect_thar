@@ -1,4 +1,4 @@
-import 'package:booky_app_clean_arctect/Features/splash/presentation/views/widget/splash_view_body.dart';
+import 'package:booky_app_clean_arctect/Features/splash/presentation/views/widgets/splash_view_body.dart';
 import 'package:flutter/material.dart';
 
 class SplashView extends StatefulWidget {
