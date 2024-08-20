@@ -1,8 +1,8 @@
 import 'package:booky_app_clean_arctect/Features/home/presentation/view_models/views/widgets/featured_list_view_item.dart';
 import 'package:flutter/material.dart';
 
-class FeaturedBooksListView extends StatelessWidget {
-  const FeaturedBooksListView({super.key});
+class FeaturedListView extends StatelessWidget {
+  const FeaturedListView({super.key});
 
   @override
   Widget build(BuildContext context) {
