@@ -1,8 +1,7 @@
 import 'package:booky_app_clean_arctect/Features/home/presentation/view_models/views/widgets/best_seller_list_view_item.dart';
 import 'package:booky_app_clean_arctect/Features/home/presentation/view_models/views/widgets/custom_app_bar.dart';
 import 'package:booky_app_clean_arctect/Features/home/presentation/view_models/views/widgets/featured_list_view.dart';
-import 'package:booky_app_clean_arctect/constants.dart';
-import 'package:booky_app_clean_arctect/core/utils/assets_data.dart';
+
 import 'package:booky_app_clean_arctect/core/utils/styles.dart';
 import 'package:flutter/material.dart';
 
@@ -24,6 +23,9 @@ class HomeViewBody extends StatelessWidget {
           Text(
             'Best Seller',
             style: Styles.textStyle18,
+          ),
+          const SizedBox(
+            height: 20,
           ),
           BestSellerListViewItem(),
         ],
