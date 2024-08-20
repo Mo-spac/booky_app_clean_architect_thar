@@ -1,4 +1,5 @@
 import 'package:booky_app_clean_arctect/Features/home/presentation/view_models/views/widgets/book_rating.dart';
+import 'package:booky_app_clean_arctect/Features/home/presentation/view_models/views/widgets/books_button_action.dart';
 import 'package:booky_app_clean_arctect/Features/home/presentation/view_models/views/widgets/custom_book_details_app_bar.dart';
 import 'package:booky_app_clean_arctect/Features/home/presentation/view_models/views/widgets/custom_book_image.dart';
 import 'package:booky_app_clean_arctect/core/utils/styles.dart';
@@ -38,6 +39,16 @@ class BookDetailsViewBody extends StatelessWidget {
               ),
             ),
           ),
+          const SizedBox(
+            height: 18,
+          ),
+          BookRating(
+            mainAxisAlignment: MainAxisAlignment.center,
+          ),
+          const SizedBox(
+            height: 37,
+          ),
+          BooksButtonAction(),
         ],
       ),
     );
