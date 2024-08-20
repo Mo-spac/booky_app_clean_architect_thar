@@ -1,4 +1,4 @@
-import 'package:booky_app_clean_arctect/Features/home/book_details_view.dart';
+import 'package:booky_app_clean_arctect/Features/home/presentation/view_models/views/book_details_view.dart';
 import 'package:booky_app_clean_arctect/Features/home/presentation/view_models/views/home_view.dart';
 import 'package:booky_app_clean_arctect/Features/splash/presentation/views/splash_view.dart';
 import 'package:go_router/go_router.dart';
