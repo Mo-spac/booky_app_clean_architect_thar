@@ -3,7 +3,6 @@ import 'package:booky_app_clean_arctect/constants.dart';
 import 'package:booky_app_clean_arctect/core/utils/assets_data.dart';
 import 'package:booky_app_clean_arctect/core/utils/styles.dart';
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class BestSellerListViewItem extends StatelessWidget {
   const BestSellerListViewItem({super.key});
@@ -66,7 +65,7 @@ class BestSellerListViewItem extends StatelessWidget {
                     const Spacer(),
                     BookRating(),
                   ],
-                )
+                ),
               ],
             ),
           ),
