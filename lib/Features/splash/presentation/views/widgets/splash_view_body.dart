@@ -1,7 +1,4 @@
-import 'package:booky_app_clean_arctect/Features/home/presentation/view_models/views/home_view.dart';
 import 'package:booky_app_clean_arctect/Features/splash/presentation/views/widgets/sliding_text.dart';
-import 'package:booky_app_clean_arctect/constants.dart';
-import 'package:booky_app_clean_arctect/core/utils/app_router.dart';
 import 'package:booky_app_clean_arctect/core/utils/assets_data.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
