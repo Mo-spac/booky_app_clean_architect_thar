@@ -2,12 +2,12 @@ import 'package:booky_app_clean_arctect/Features/home/presentation/view_models/v
 import 'package:booky_app_clean_arctect/constants.dart';
 import 'package:booky_app_clean_arctect/core/utils/app_router.dart';
 import 'package:booky_app_clean_arctect/core/utils/assets_data.dart';
-import 'package:booky_app_clean_arctect/core/utils/styles.dart';
+import 'package:booky_app_clean_arctect/core/utils/styles_fonts.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
-class BestSellerListViewItem extends StatelessWidget {
-  const BestSellerListViewItem({super.key});
+class BookListViewItem extends StatelessWidget {
+  const BookListViewItem({super.key});
 
   @override
   Widget build(BuildContext context) {

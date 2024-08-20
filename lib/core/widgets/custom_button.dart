@@ -1,4 +1,4 @@
-import 'package:booky_app_clean_arctect/core/utils/styles.dart';
+import 'package:booky_app_clean_arctect/core/utils/styles_fonts.dart';
 import 'package:flutter/material.dart';
 
 class CustomButton extends StatelessWidget {

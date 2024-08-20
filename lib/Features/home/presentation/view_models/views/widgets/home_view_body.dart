@@ -1,7 +1,7 @@
 import 'package:booky_app_clean_arctect/Features/home/presentation/view_models/views/widgets/best_seller_list_view.dart';
 import 'package:booky_app_clean_arctect/Features/home/presentation/view_models/views/widgets/custom_app_bar.dart';
 import 'package:booky_app_clean_arctect/Features/home/presentation/view_models/views/widgets/featured_list_view.dart';
-import 'package:booky_app_clean_arctect/core/utils/styles.dart';
+import 'package:booky_app_clean_arctect/core/utils/styles_fonts.dart';
 import 'package:flutter/material.dart';
 
 class HomeViewBody extends StatelessWidget {
@@ -15,7 +15,10 @@ class HomeViewBody extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              CustomAppBar(),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 30),
+                child: CustomAppBar(),
+              ),
               FeaturedListView(),
               const SizedBox(
                 height: 50,

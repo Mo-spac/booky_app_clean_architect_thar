@@ -1,7 +1,7 @@
 import 'package:booky_app_clean_arctect/Features/home/presentation/view_models/views/widgets/book_rating.dart';
 import 'package:booky_app_clean_arctect/Features/home/presentation/view_models/views/widgets/books_button_action.dart';
 import 'package:booky_app_clean_arctect/Features/home/presentation/view_models/views/widgets/custom_book_image.dart';
-import 'package:booky_app_clean_arctect/core/utils/styles.dart';
+import 'package:booky_app_clean_arctect/core/utils/styles_fonts.dart';
 import 'package:flutter/material.dart';
 
 class BookDetailsSection extends StatelessWidget {
