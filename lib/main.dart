@@ -1,10 +1,15 @@
+import 'package:booky_app_clean_arctect/Features/home/domain/entities/book_entity.dart';
 import 'package:booky_app_clean_arctect/constants.dart';
 import 'package:booky_app_clean_arctect/core/utils/app_router.dart';
 import 'package:flutter/material.dart';
 // import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:hive_flutter/adapters.dart';
 
-void main() {
+void main() async {
+  Hive.registerAdapter(BookEntityAdapter());
+  await Hive.openBox(kFeaturedBox);
+
   runApp(const BookyApp());
 }
 
