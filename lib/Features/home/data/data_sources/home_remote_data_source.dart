@@ -1,6 +1,9 @@
 import 'package:booky_app_clean_arctect/Features/home/data/models/book_model/book_model.dart';
 import 'package:booky_app_clean_arctect/Features/home/domain/entities/book_entity.dart';
+import 'package:booky_app_clean_arctect/constants.dart';
 import 'package:booky_app_clean_arctect/core/utils/api_service.dart';
+import 'package:booky_app_clean_arctect/core/utils/functions/save_books_data.dart';
+import 'package:hive_flutter/adapters.dart';
 
 abstract class HomeRemoteDataSource {
   Future<List<BookEntity>> fetchFeaturedBooks();
@@ -18,6 +21,9 @@ class HomeRemoteDataSourceImpl extends HomeRemoteDataSource {
         endPoint: 'volumes?filtering=free_books&q=programming');
 
     List<BookEntity> books = getBooksList(data);
+
+    saveBooksData(books, kFeaturedBox);
+
     return books;
   }
 
