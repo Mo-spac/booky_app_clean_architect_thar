@@ -3,7 +3,6 @@ import 'package:booky_app_clean_arctect/Features/home/domain/entities/book_entit
 import 'package:booky_app_clean_arctect/constants.dart';
 import 'package:booky_app_clean_arctect/core/utils/api_service.dart';
 import 'package:booky_app_clean_arctect/core/utils/functions/save_books_data.dart';
-import 'package:hive_flutter/adapters.dart';
 
 abstract class HomeRemoteDataSource {
   Future<List<BookEntity>> fetchFeaturedBooks();
@@ -33,6 +32,9 @@ class HomeRemoteDataSourceImpl extends HomeRemoteDataSource {
         endPoint: 'volumes?filtering=free_books&Sorting=newest&q=programming');
 
     List<BookEntity> books = getBooksList(data);
+
+    saveBooksData(books, kNewestBox);
+
     return books;
   }
 
