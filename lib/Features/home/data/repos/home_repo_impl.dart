@@ -5,6 +5,7 @@ import 'package:booky_app_clean_arctect/Features/home/domain/repos/home_repo.dar
 import 'package:booky_app_clean_arctect/core/errors/failure.dart';
 import 'package:booky_app_clean_arctect/core/utils/api_service.dart';
 import 'package:dartz/dartz.dart';
+import 'package:dio/dio.dart';
 
 class HomeRepoImpl extends HomeRepo {
   // final ApiService apiService;
@@ -26,7 +27,10 @@ class HomeRepoImpl extends HomeRepo {
       var books = await homeRemoteDataSource.fetchFeaturedBooks();
       return right(books);
     } catch (e) {
-      return left(ServerFailure());
+      if (e is DioException) {
+        return left(ServerFailure.froDioException(e));
+      }
+      return left(ServerFailure(e.toString()));
     }
   }
 
@@ -41,7 +45,10 @@ class HomeRepoImpl extends HomeRepo {
       books = await homeRemoteDataSource.fetchNewestBooks();
       return right(books);
     } catch (e) {
-      return left(ServerFailure());
+      if (e is DioException) {
+        return left(ServerFailure.froDioException(e));
+      }
+      return left(ServerFailure(e.toString()));
     }
   }
 }
